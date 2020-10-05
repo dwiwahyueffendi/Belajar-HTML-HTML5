@@ -1,27 +1,51 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>FORM HTMl</title>
+        <title>FORM HTML</title>
     </head>
     <body>
         <!-- elemen form
             input type="" : text, passowrd, radio, checkbox, (submit, reset, button)
             textare, select, button, label
         -->
-        <label for="Username">Username : </label>
-        <input type="text" id="Usernama"><br>
 
-        <label for="Password">Password : </label>
-        <input type="password" id="Password"><br>
-
-        <input type="radio" id="Pria" name="jenisKelamin"><label for="Pria">Pria</label>
-        <input type="radio" id="Wanita" name="jenisKelamin"><label for="Wanita">Wanita</label><br>
-
-        <input type="checkbox" id="Berenang"><label for="Berenang">Berenang</label>
-        <input type="checkbox" id="Membaca"><label for="Membaca">Membaca</label>
-        <input type="checkbox" id="Mengcoding"><label for="Mengcoding">Mengcoding</label>
-        <input type="checkbox" id="Jogging"><label for="Jogging">Jogging</label><br>
-
-        <button type="submit">Kirim Sekarang</button>
+        <form>
+            <table border="0" cellpacing="0" cellpadding="5">
+                <tr>
+                    <td><label for="Username">Username : </label></td>
+                    <td><input type="text" id="Usernama"></td>
+                </tr>
+                <tr>
+                    <td><label for="Password">Password : </label></td>
+                    <td><input type="password" id="Password"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="radio" id="Pria" name="jenisKelamin"><label for="Pria">Pria</label>
+                        <input type="radio" id="Wanita" name="jenisKelamin"><label for="Wanita">Wanita</label></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" id="Berenang"><label for="Berenang">Berenang</label>
+                        <input type="checkbox" id="Membaca"><label for="Membaca">Membaca</label>
+                        <input type="checkbox" id="Mengcoding"><label for="Mengcoding">Mengcoding</label>
+                        <input type="checkbox" id="Jogging"><label for="Jogging">Jogging</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea name="Testimoni" id="Testimoni" cols="30" rows="10">Testimoni : </textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <select name="negaraLahir" id="negaraLahir">
+                            <option value="luarNegeri">Luar Negeri</option>
+                            <option value="dalamNegeri">Dalam Negeri</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit">Kirim Sekarang</button></td>
+                </tr>
+            </table>
+        </form>
     </body>
 </html>
