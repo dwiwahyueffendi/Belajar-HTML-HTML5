@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Belajar HTML5</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Belajar HTML 5">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Dwi Wahyu Effendi">
+        <style>
+            body{
+                font-family: Verdana, sans-serif;
+                font-size: 12px;
+            }
+            header, nav, main, aside, footer{
+                border:1px solid gray; margin:5px; padding:5px;
+            }
+            main{
+                float: left;
+                width: 60%;
+            }
+            aside{
+                float: left;
+                width: 30%;
+            }
+            footer{
+                clear: both;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Belajar HTML5</h1>
+            <h2>Sumber Sekolah Koding</h2>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profil</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <article>
+
+                <video width="300" controls autoplay poster="logo.png">
+                    <source src="video.mp4" type="video/mp4">
+                    <source src="video.ogg" type="video/ogg">
+                    browser anda tidak mendukung pemutaran video
+                </video>
+
+                <audio width="300" controls loop>
+                    <source src="Booster.mp3" type="audio/mp3">
+                    <source src="video.ogg" type="video/ogg">
+                    browser anda tidak mendukung pemutaran audio
+                </audio>
+
+                <form>
+                    <input type="search" name="search" placeholder="search" required><br>
+                    <input type="email" name="email" placeholder="email" required><br>
+                    <input type="url" name="url" placeholder="url" required><br>
+                    <input type="tel" name="telpon" placeholder="telpon" required><br>
+                    <input type="number" name="number" placeholder="number" required><br>
+                    <input type="range" name="range" placeholder="range" required><br>
+                    <input type="date" name="date" min="2010-01-01" max="2020-01-01" placeholder="date" required><br>
+                    <input type="month" name="month" placeholder="month" required><br>
+                    <input type="week" name="week" placeholder="week" required><br>
+                    <input type="time" name="time" placeholder="time" required><br>
+                    <input type="datetime" name="datetime" placeholder="datetime" required><br>
+                    <input type="datetime-local" name="datetime-local" placeholder="datetime-local" required><br>
+                    <input type="color" name="color" placeholder="color" required><br>
+                    <input type="submit">
+                </form>
+
+                <figure>
+                    <img src="logo.png" alt="Logo Komunitas" width="200" title="Logo Komunitas">
+                    <figcaption>
+                        Logo Komunitas Informatics Learning Community
+                        <a href="http://www.google.com" target="blank">Website Facebook</a>
+                    </figcaption>
+                </figure>
+    
+                <dialog open>
+                    Ini Menggunakan Dialog
+                </dialog>
+    
+                <details>
+                    <summary>
+                        Website Belajar HTML5
+                    </summary>
+                    <p>Ini Menggunakan Summary</p>
+                </details>
+
+                <h1>Daftar Perjalanan</h1>
+                <section>
+                    <h1>HTML</h1>
+                    <h2>Membuat Website dengan HTML</h2>
+                </section>
+                <section>
+                    <h1>CSS</h1>
+                    <h2>Membuat Website dengan CSS</h2>
+                </section>
+                <section>
+                    <h1>JavaScript</h1>
+                    <h2>Membuat Website dengan JavaScript</h2>
+                </section>
+            </article>
+        </main>
+
+        <aside>
+            <h1>Daftar Artikel</h1>
+            <a href="#">Intro HTML</a>
+            <a href="#">Intro CSS</a>
+            <a href="#">Intro JavaScript</a>
+        </aside>
+
+        <footer>
+            <p>&copy; 2020 Dwi Wahyu Effendi</p>
+        </footer>
+    </body>
+</html>
